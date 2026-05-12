@@ -1,0 +1,207 @@
+{
+  "campus_coords": {
+    "GATE_1":               [185, 184],
+    "GATE_2":               [427, 109],
+    "GATE_3":               [565, 148],
+    "GATE_4":               [620, 164],
+    "Academician_Park":     [150, 349],
+    "Staff_Apartments_West":[389, 119],
+    "Student_Residences_A": [553, 172],
+    "Student_Residences_B": [543, 218],
+    "Villas":               [457, 184],
+    "TRENT":                [278, 201],
+    "PMB":                  [278, 303],
+    "YANG_Fujia":           [311, 287],
+    "Auditorium":           [337, 266],
+    "PB":                   [358, 244],
+    "Hub":                  [364, 255],
+    "Library":              [381, 204],
+    "Staff_Hotel":          [430, 146],
+    "LA_Hotel":             [463, 135],
+    "Student_Canteen":      [504, 171],
+    "Health_Centre":        [553, 358],
+    "DB":                   [304, 415],
+    "New_Audi":             [338, 393],
+    "NICC":                 [365, 416],
+    "Sports_Centre":        [475, 413],
+    "IAMET":                [221, 323],
+    "IEB":                  [238, 448],
+    "ICC":                  [382, 129],
+    "Bridge_North":         [394, 150],
+    "Bridge_Middle":        [444, 271],
+    "Bridge_South":         [314, 376]
+  },
+  "campus_graph": {
+    "GATE_1": {
+      "IAMET": 431,
+      "IEB": 808
+    },
+    "GATE_2": {
+      "GATE_3": 432,
+      "Staff_Apartments_West": 117,
+      "Staff_Hotel": 110
+    },
+    "GATE_3": {
+      "GATE_2": 432,
+      "GATE_4": 171,
+      "Student_Canteen": 198,
+      "Student_Residences_A": 81
+    },
+    "GATE_4": {
+      "GATE_3": 171,
+      "Health_Centre": 616
+    },
+    "Academician_Park": {
+      "IAMET": 226
+    },
+    "Staff_Apartments_West": {
+      "GATE_2": 117,
+      "Bridge_North": 93,
+      "ICC": 36,
+      "Staff_Hotel": 147
+    },
+    "Student_Residences_A": {
+      "GATE_3": 81,
+      "Student_Canteen": 147,
+      "Student_Residences_B": 140
+    },
+    "Student_Residences_B": {
+      "Student_Canteen": 182,
+      "Student_Residences_A": 140,
+      "Health_Centre": 423
+    },
+    "Villas": {
+      "Staff_Hotel": 139
+    },
+    "TRENT": {
+      "Auditorium": 264,
+      "Bridge_North": 381,
+      "IAMET": 404
+    },
+    "PMB": {
+      "YANG_Fujia": 107,
+      "IAMET": 184,
+      "Bridge_South": 245
+    },
+    "YANG_Fujia": {
+      "Auditorium": 102,
+      "PMB": 107,
+      "Bridge_South": 266
+    },
+    "Auditorium": {
+      "PB": 92,
+      "TRENT": 264,
+      "YANG_Fujia": 102
+    },
+    "PB": {
+      "Auditorium": 92,
+      "Hub": 38,
+      "Library": 137,
+      "Bridge_Middle": 269
+    },
+    "Hub": {
+      "PB": 38
+    },
+    "Library": {
+      "PB": 137,
+      "Bridge_North": 167,
+      "Bridge_Middle": 276
+    },
+    "Staff_Hotel": {
+      "GATE_2": 110,
+      "Bridge_North": 109,
+      "LA_Hotel": 105,
+      "Staff_Apartments_West": 147,
+      "Villas": 139
+    },
+    "LA_Hotel": {
+      "Staff_Hotel": 105
+    },
+    "Student_Canteen": {
+      "GATE_3": 198,
+      "Student_Residences_A": 147,
+      "Student_Residences_B": 182,
+      "Bridge_Middle": 349
+    },
+    "Health_Centre": {
+      "GATE_4": 616,
+      "Sports_Centre": 284,
+      "Student_Residences_B": 423
+    },
+    "DB": {
+      "Bridge_South": 120,
+      "IEB": 220,
+      "New_Audi": 123,
+      "NICC": 185
+    },
+    "New_Audi": {
+      "Bridge_South": 88,
+      "DB": 123,
+      "NICC": 108
+    },
+    "NICC": {
+      "DB": 185,
+      "New_Audi": 108,
+      "Sports_Centre": 329
+    },
+    "Sports_Centre": {
+      "Bridge_Middle": 435,
+      "Health_Centre": 284,
+      "NICC": 329
+    },
+    "IAMET": {
+      "Academician_Park": 226,
+      "GATE_1": 431,
+      "IEB": 379,
+      "PMB": 184,
+      "TRENT": 404
+    },
+    "IEB": {
+      "DB": 220,
+      "GATE_1": 808,
+      "IAMET": 379
+    },
+    "ICC": {
+      "Bridge_North": 73,
+      "Staff_Apartments_West": 36
+    },
+    "Bridge_North": {
+      "ICC": 73,
+      "Library": 167,
+      "Staff_Apartments_West": 93,
+      "Staff_Hotel": 109,
+      "TRENT": 381
+    },
+    "Bridge_Middle": {
+      "Library": 276,
+      "PB": 269,
+      "Sports_Centre": 435,
+      "Student_Canteen": 349
+    },
+    "Bridge_South": {
+      "DB": 120,
+      "New_Audi": 88,
+      "PMB": 245,
+      "YANG_Fujia": 266
+    }
+  },
+  "campus_bridges": {
+    "Bridge_North": {
+      "description": "Wooden footbridge connecting academic core to residential area. Congested during meal times as students head to canteen.",
+      "congestion": {"12": 500, "13": 400, "18": 500, "19": 400}
+    },
+    "Bridge_Middle": {
+      "description": "Main road bridge connecting PB/Library area to sports/canteen. Congested during meal times.",
+      "congestion": {"12": 500, "13": 400, "18": 500, "19": 400}
+    },
+    "Bridge_South": {
+      "description": "Southern bridge connecting PMB/YANG_Fujia to DB/New_Audi. Congested during class hours as students walk to lecture halls.",
+      "congestion": {"9": 500, "10": 400, "11": 400, "14": 500, "15": 400, "16": 400}
+    }
+  },
+  "regions": {
+    "west": ["GATE_1", "Academician_Park", "TRENT", "PMB", "YANG_Fujia", "Auditorium", "PB", "Hub", "Library", "ICC", "IAMET", "IEB", "DB", "New_Audi", "NICC"],
+    "east": ["GATE_2", "GATE_3", "GATE_4", "Staff_Apartments_West", "Staff_Hotel", "LA_Hotel", "Villas", "Student_Canteen", "Student_Residences_A", "Student_Residences_B", "Health_Centre", "Sports_Centre"],
+    "bridges": ["Bridge_North", "Bridge_Middle", "Bridge_South"]
+  }
+}
